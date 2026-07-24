@@ -19,7 +19,7 @@ At UC Berkeley's Garage Cinema Research group, I worked on Active Capture and Ad
 
 ## The build years
 
-In 2009, I co-founded Marcellus. We bootstrapped a B2B SaaS to $2M+ ARR, scaled engineering from two to thirty, and built an end-to-end on-demand video transcoding platform. Major media companies across AMEA ran on it—Jagran, Star TV, Nation Media, Reliance Entertainment. I operated as a Forward Deployed Engineer, running workflow assessments with enterprise customers and building trust in ambiguous, early-stage environments. Every integration was different. Every customer had a unique stack. We learned to build blueprints, not one-offs.
+In 2009, I co-founded Marcellus. We scaled engineering from two to thirty and built an end-to-end on-demand video transcoding platform. Major media companies across AMEA ran on it—Jagran, Star TV, Nation Media, Reliance Entertainment. I operated as a Forward Deployed Engineer, running workflow assessments with enterprise customers and building trust in ambiguous, early-stage environments. Every integration was different. Every customer had a unique stack. We learned to build blueprints, not one-offs.
 
 Later, as Managing Partner of The Marcellus Agency, I served as primary technical advisor to global brands like VANS and New Balance, leading delivery on systems tied to multi-million-dollar revenue roadmaps. I translated business requirements into technical architecture, coordinated cross-functional stakeholders from discovery through deployment, and built repeatable delivery patterns that scaled our capacity to serve multiple enterprise clients.
 
