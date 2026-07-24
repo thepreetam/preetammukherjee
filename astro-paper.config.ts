@@ -31,7 +31,7 @@ export default defineAstroPaperConfig({
   socials: [
     { name: "github",   url: "https://github.com/thepreetam" },
     { name: "x",        url: "https://x.com/thepreetam" },
-    { name: "linkedin", url: "https://www.linkedin.com/in/thepreetam" },
+    { name: "linkedin", url: "https://www.linkedin.com/in/preetammukherjee/" },
     { name: "mail",     url: "mailto:preetam@mahamaia.com" },
   ],
   shareLinks: [
