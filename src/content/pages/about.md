@@ -11,7 +11,7 @@ Most AI systems assume more bandwidth than is available in the field. Raw video 
 
 I started in robotics at Asyst Technologies, testing SMIF I/O systems that moved silicon wafers through semiconductor fabrication lines.
 
-Then [Cisco](https://www.cisco.com/c/en/us/tech/voice/ip-telephony-voice-over-ip-voip/index.html), where I worked on Enterprise Voice and Video over IP.
+Then [Cisco](https://www.cisco.com/c/en/us/tech/voice/ip-telephony-voice-over-ip-voip/index.html), where I worked on the first generation IP Phones.
 
 At [UC Berkeley](https://berkeley.edu)'s [Garage Cinema Research](https://www.ischool.berkeley.edu/events/2006/yahoo-research-berkeley-designing-future-social-media) group, I worked on Active Capture and Adaptive Media — research that contributed to the formation of Yahoo! Research Berkeley. The work focused on automating media production using computer vision and interaction design to direct, capture, and edit footage into finished media.
 
