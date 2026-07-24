@@ -31,7 +31,7 @@ This led to OUTPOST: instead of transmitting full frames, the system extracts an
 
 ## Current work
 
-I own product vision end-to-end. I've built and shipped a complete encoder-decoder pipeline in Python, designed a downstream-aware evaluation framework to measure detection accuracy retention under bandwidth and frame-drop constraints, and filed patents on [constrained quantum optimization](https://doi.org/10.64898/2026.01.27.699805) and tensor-train networks for parameter-efficient medical imaging. I built Prañāda, a retinal screening platform achieving 91.6% accuracy.
+I own product vision end-to-end. I've built and shipped a complete encoder-decoder pipeline in Python, designed a downstream-aware evaluation framework to measure detection accuracy retention under bandwidth and frame-drop constraints, and filed patents on [constrained quantum optimization](https://doi.org/10.64898/2026.01.27.699805) and tensor-train networks for parameter-efficient medical imaging. I built <a href="https://github.com/thepreetam/pranada-medgemma">Prañāda</a>, a retinal screening platform achieving 91.6% accuracy.
 
 I work across PyTorch, LangGraph, Docker, and Kubernetes on AWS and GCP, building agentic AI systems and RAG pipelines, evaluation frameworks that connect model performance to business outcomes, and translating customer requirements into production architecture.
 
