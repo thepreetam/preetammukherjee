@@ -10,7 +10,7 @@ tags:
   - infrastructure
 ---
 
-These days, most videos aren't viewed by people. Instead, they are processed by neural networks. We've hit a turning point: machines, not human eyes, are the main audience for visual data. But our technology for handling this data hasn't caught up. Every video frame is still dealt with as if a person were watching it on the other side.
+These days, most videos aren't viewed by people. Instead, they are processed by neural networks. We've [hit a turning point](https://arxiv.org/abs/2105.12653): machines, not human eyes, are the main audience for visual data. But our technology for handling this data hasn't caught up. Every video frame is still dealt with as if a person were watching it on the other side.
 
 This outdated approach leads to what you could call the "pixel tax." It refers to all the costs of processing video data—encoding, sending, decoding, and storing—that machine learning systems end up ignoring anyway.
 
