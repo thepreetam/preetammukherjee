@@ -3,46 +3,38 @@ title: "About"
 description: "About Preetam Mukherjee"
 ---
 
-I build systems that make machines see—without the firehose of data.
+I build systems that let machines see without needing a firehose of data.
 
-Most AI today drowns in bandwidth. Raw video is too heavy, too slow, too expensive to move over the links that matter—drones, subsea vehicles, forward-deployed sensors. So I'm building OUTPOST at [Mahamaia Systems](https://mahamaia.com): a neural feature compression codec that extracts meaning from the sensor before it ever hits the wire. The AI gets what it needs. The pipe stays lean.
+Most AI systems assume more bandwidth than is available in the field. Raw video is heavy, slow, and expensive to move over links like drone, subsea, and remote sensor connections. At Mahamaia Systems, I'm building OUTPOST, a neural feature compression codec that extracts meaning from sensor data before transmission, reducing what has to travel over the connection.
 
-This isn't my first time building at the edge of what's possible.
+## Background
 
-## The long road here
+I started in robotics, doing cleanroom automation at Asyst Technologies, testing SMIF I/O systems used to move silicon wafers through fabrication lines.
 
-I started in robotics—cleanroom automation at Asyst Technologies, testing SMIF I/O systems that moved silicon wafers through fabrication lines. Precision at the physical layer. Everything else rests on that.
+I then worked at Cisco on Enterprise Voice and Video over IP, dealing with latency, jitter, and packet loss in real-time communication systems.
 
-Then Cisco. Enterprise Voice and Video over IP taught me the unforgiving math of real-time communication: latency, jitter, packet loss. You can't buffer your way out of a bad network. You design for the constraint from the start or you fail.
+At UC Berkeley's Garage Cinema Research group, I worked on Active Capture and Adaptive Media, research that contributed to the formation of Yahoo! Research Berkeley. The work focused on automating media production — using computer vision and interaction design to automatically direct, capture, and edit footage into finished media.
 
-At UC Berkeley's Garage Cinema Research group, I worked on Active Capture and Adaptive Media—research that later became Yahoo! Berkeley Labs. We asked how media adapts when the network is hostile. That question never left me.
+## Marcellus
 
-## The build years
+In 2009, I co-founded Marcellus. We bootstrapped the company to $2M+ in ARR, grew the engineering team from two people to thirty, and built an on-demand video transcoding platform used by media companies across Asia and the Middle East, including Jagran, Star TV, Nation Media, and Reliance Entertainment. I worked as a forward-deployed engineer, running workflow assessments with enterprise customers and building integration patterns adapted to each customer's existing systems.
 
-In 2009, I co-founded Marcellus. We scaled engineering from two to thirty and built an end-to-end on-demand video transcoding platform. Major media companies across AMEA ran on it—Jagran, Star TV, Nation Media, Reliance Entertainment. I operated as a Forward Deployed Engineer, running workflow assessments with enterprise customers and building trust in ambiguous, early-stage environments. Every integration was different. Every customer had a unique stack. We learned to build blueprints, not one-offs.
+As Managing Partner of The Marcellus Agency, I served as primary technical advisor to brands including VANS and New Balance, leading delivery on systems tied to multi-million-dollar revenue programs. This involved translating business requirements into technical architecture and coordinating stakeholders from discovery through deployment.
 
-Later, as Managing Partner of The Marcellus Agency, I served as primary technical advisor to global brands like VANS and New Balance, leading delivery on systems tied to multi-million-dollar revenue roadmaps. I translated business requirements into technical architecture, coordinated cross-functional stakeholders from discovery through deployment, and built repeatable delivery patterns that scaled our capacity to serve multiple enterprise clients.
+## OUTPOST
 
-## The turn
+After roughly fifteen years working on video transmission, I shifted focus from moving video faster to reducing how much data needs to move at all. The constraint in edge deployments — drones, subsea vehicles, remote sensors — is typically uplink bandwidth, power budget, and latency, often measured in milliseconds rather than compute capacity.
 
-After fifteen years of moving video faster, I realized the real problem was moving video smarter.
+This led to OUTPOST: instead of transmitting full frames, the system extracts and transmits semantic features — the minimum signal required for a downstream model to perform detection or classification.
 
-The constraint isn't compute anymore. It's the pipe. It's the uplink. It's the power budget. It's the latency budget measured in milliseconds.
+## Current work
 
-So I turned back to first principles. What does a machine actually need to see? Not pixels. Not frames. Features. Semantic representations. The minimal signal required for perception.
+I own product vision end-to-end. I've built and shipped a complete encoder-decoder pipeline in Python, built a downstream-aware evaluation framework using Faster R-CNN to measure detection accuracy retention under bandwidth and frame-drop constraints, and filed patents on constrained quantum optimization and tensor-train networks for parameter-efficient medical imaging.
 
-That's OUTPOST.
+I work across PyTorch, LangGraph, Docker, and Kubernetes on AWS and GCP, building evaluation frameworks that connect model performance to business outcomes, and translating customer requirements into production architecture.
 
-## The full stack
+## Location and focus
 
-Today, I own product vision end-to-end as a hands-on builder. I've built and shipped a complete encoder-decoder pipeline in Python, designed a downstream-aware eval framework using Faster R-CNN to measure detection retention under bandwidth and frame-drop constraints, and filed patents on constrained quantum optimization and tensor-train networks for parameter-efficient medical imaging.
+I'm based in San Francisco, working at the intersection of AI, video infrastructure, and edge deployment constraints — bandwidth, power, and latency.
 
-I work across the entire stack—from PyTorch and LangGraph to Docker and Kubernetes on AWS/GCP. I build eval frameworks that tie model performance to business ROI. I mentor technical stakeholders. I translate ambiguous customer requirements into production-grade architecture.
-
-The throughline is consistent: I build systems that work where the constraints are real.
-
-## Where I'm going
-
-I'm based in San Francisco, building at the intersection of AI, video infrastructure, and the physical constraints of the industrial edge. I'm obsessed with making perception work when the uplink is narrow, the power is tight, and the latency budget is measured in milliseconds.
-
-If you're working on something that pushes against the same constraints—defense, robotics, industrial AI, or just a really hard problem at the edge—I'd like to hear from you.
+If you're working on similar constraints — defense, robotics, industrial AI, or another edge-deployment problem — I'd like to hear from you.
