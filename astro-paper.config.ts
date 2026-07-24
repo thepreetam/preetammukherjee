@@ -4,7 +4,7 @@ export default defineAstroPaperConfig({
   site: {
     url: "https://preetammukherjee.com",
     title: "Preetam Mukherjee",
-    description: "Personal website of Preetam Mukherjee — founder, systems engineer, building OUTPOST.",
+    description: "AI-first product and engineering leader. Building OUTPOST — neural video compression for the edge. 15+ years in computer vision, video infrastructure, and agentic AI.",
     author: "Preetam Mukherjee",
     profile: "https://github.com/thepreetam",
     ogImage: "default-og.jpg",
