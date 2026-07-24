@@ -9,17 +9,17 @@ Most AI systems assume more bandwidth than is available in the field. Raw video 
 
 ## Background
 
-I started in robotics at Asyst Technologies, testing SMIF I/O systems that moved silicon wafers through semiconductor fabrication lines. Precision at the physical layer. Everything else rests on that.
+I started in robotics at Asyst Technologies, testing SMIF I/O systems that moved silicon wafers through semiconductor fabrication lines.
 
-Then [Cisco](https://www.cisco.com/c/en/us/tech/voice/ip-telephony-voice-over-ip-voip/index.html), where I worked on Enterprise Voice and Video over IP. That's where I learned the unforgiving math of real-time communication: latency, jitter, packet loss. You can't buffer your way out of a bad network. You design for the constraint from the start or you fail.
+Then [Cisco](https://www.cisco.com/c/en/us/tech/voice/ip-telephony-voice-over-ip-voip/index.html), where I worked on Enterprise Voice and Video over IP.
 
-At [UC Berkeley](https://berkeley.edu)'s [Garage Cinema Research](https://www.ischool.berkeley.edu/events/2006/yahoo-research-berkeley-designing-future-social-media) group, I worked on Active Capture and Adaptive Media — research that contributed to the formation of Yahoo! Research Berkeley. We asked how media adapts when the network is hostile. That question never left me.
+At [UC Berkeley](https://berkeley.edu)'s [Garage Cinema Research](https://www.ischool.berkeley.edu/events/2006/yahoo-research-berkeley-designing-future-social-media) group, I worked on Active Capture and Adaptive Media — research that contributed to the formation of Yahoo! Research Berkeley. The work focused on automating media production using computer vision and interaction design to direct, capture, and edit footage into finished media.
 
 ## Marcellus
 
 In 2009, I co-founded Marcellus. We bootstrapped the company, grew the engineering team from two to thirty, and built an on-demand video transcoding platform used by major media companies across Asia, the Middle East, and Africa — including Jagran, Star TV, Nation Media, and Reliance Entertainment.
 
-I operated as a forward-deployed engineer, running workflow assessments with enterprise customers and building integration patterns adapted to each customer's existing systems. Every integration was different. Every customer had a unique stack. We learned to build blueprints, not one-offs.
+I operated as a forward-deployed engineer, running workflow assessments with enterprise customers and building integration patterns adapted to each customer's existing systems.
 
 As Managing Partner of [The Marcellus Agency](https://agencym3.com), I served as primary technical advisor to brands including [VANS](https://www.mensjournal.com/travel/vans-launches-custom-boardshort-program) and New Balance, leading delivery on systems tied to multi-million-dollar revenue programs. This meant translating business requirements into technical architecture and coordinating stakeholders from discovery through deployment.
 
