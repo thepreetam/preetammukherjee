@@ -52,7 +52,7 @@ So, why is this happening now? No single technology could make this possible on 
 
 ## The Competitive Edge
 
-Video codecs like H.264 and H.265 became widely used because everyone followed the same standard, turning them into commodities. Machine-native codecs will follow this trend. The true advantage lies not in the bitstream itself but in continuously adapting these representations to align with new models, hardware, and environments. Companies that thrive won't be those stuck on pixels; they'll be those adept at managing how intelligence flows.
+Video codecs like H.264 and H.265 became widely used because everyone followed the same standard, turning them into commodities. Machine-native codecs will likely continue this trend. The advantage doesn't lie in the bitstream itself but in continuously adapting these representations to align with new models, hardware, and environments. Companies that thrive will be adept at managing how intelligence flows.
 
 ## Looking Forward
 
