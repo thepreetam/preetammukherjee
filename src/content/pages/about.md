@@ -21,7 +21,7 @@ In 2009, I co-founded Marcellus. We bootstrapped the company, grew the engineeri
 
 I operated as a forward-deployed engineer, running workflow assessments with enterprise customers and building integration patterns adapted to each customer's existing systems.
 
-As Managing Partner of [The Marcellus Agency](https://agencym3.com), I served as primary technical advisor to brands including [VANS](https://www.mensjournal.com/travel/vans-launches-custom-boardshort-program) and New Balance, leading delivery on systems tied to multi-million-dollar revenue programs. This meant translating business requirements into technical architecture and coordinating stakeholders from discovery through deployment.
+As Managing Partner of [The Marcellus Agency](https://agencym3.com), I served as primary technical advisor to clients serving brands including [VANS](https://www.mensjournal.com/travel/vans-launches-custom-boardshort-program) and New Balance, leading delivery on systems tied to multi-million-dollar revenue programs. This meant translating business requirements into technical architecture and coordinating stakeholders from discovery through deployment.
 
 ## OUTPOST
 
