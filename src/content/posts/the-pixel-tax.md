@@ -10,13 +10,11 @@ tags:
   - infrastructure
 ---
 
-Every AI vision system pays to capture, compress, transmit, decode, and store billions of pixels that its neural network immediately throws away. That hidden infrastructure cost is becoming one of the largest inefficiencies in modern AI.
-
-Welcome to the "pixel tax." It's the cost of encoding, sending, decoding, and storing information that machine learning models discard on arrival.
+Each AI vision system ends up paying for the entire process of dealing with billions of pixels—capturing, compressing, transmitting, decoding, and storing them. However, these neural networks often discard most of that data almost instantly. This hidden infrastructure cost is turning into a massive inefficiency in today's AI technologies. Welcome to what we call the "pixel tax." It's essentially the price paid for handling all that data which machine learning models don't actually use.
 
 ## Understanding Waste
 
-To see the tax in action, trace what happens to a single frame:
+To grasp this concept better, let's follow a single frame's journey:
 
 ```
 Camera
@@ -34,34 +32,28 @@ CNN / ViT Backbone
 Feature Tensor (~tens of KB)
 ```
 
-Everything above the backbone exists only because the transport layer expects pixels — not because the model needs them. The detector never reasons over JPEG blocks or RGB pixels. It reasons over learned representations. Pixels are simply an expensive serialization format used to deliver information to the first layer of the network.
+It begins with a camera capturing RGB pixels (about 8 MB), then moves through H.265 encoding. From there, it travels over a network where it's decoded before reaching the CNN or [ViT](https://arxiv.org/abs/2010.11929) backbone to become a feature tensor (only tens of KB). Notice how everything above this stage involves copying and processing vast amounts of unnecessary data. The backbone exists because the transport layer requires pixels, not because the model relies on them. The detector doesn't analyze JPEG blocks or RGB pixels; it processes learned representations. Pixels act as a costly format to send information to the network's first layer.
 
-H.265 spends bits preserving textures, colors, and visual fidelity because it optimizes for what humans perceive — not for what neural networks need to make decisions. The result: we pay bandwidth, storage, and decoding costs for roughly 7.93 MB of unnecessary information per frame. That's the pixel tax.
+H.265 dedicates bits to maintaining textures, colors, and visual quality because it focuses on human perception, not what neural networks need for decision-making. Consequently, we incur costs in bandwidth, storage, and decoding for about 7.93 MB of superfluous data per frame—this is what you might call a pixel tax.
 
-This inefficiency isn't evenly distributed. It hits hardest where bandwidth is scarce and cameras are many: offshore platforms, factories, mines, agricultural fields, satellites, maritime vessels, and remote utility infrastructure. A 100-camera facility streaming 8 Mbps per camera generates roughly 800 Mbps of continuous uplink traffic. If machine-native representations reduced that by 10×, the difference isn't academic — it changes which networks become economically viable.
+This inefficiency isn't spread evenly; it impacts most where bandwidth is limited and cameras are plentiful: offshore platforms, factories, mines, farms, satellites, ships at sea, and remote utility sites. Imagine a facility with 100 cameras each streaming at 8 Mbps. That setup creates about 800 Mbps of constant upload traffic. If machine-native formats cut that by ten times, it's not just theory—it opens up new affordable network options.
 
 ## The Architecture We're Stuck With
 
-Today's cameras still operate under a broadcast-era model designed for one-to-many human viewing. Pixels are captured, encoded with H.265 or H.264, pushed over costly uplinks, decoded in the cloud into RGB, and only then fed into a CNN or ViT backbone. The data is condensed into a compact latent representation, often tens of kilobytes, allowing detectors and trackers to operate efficiently. But by the time the model gets what it needs, the infrastructure has already paid the pixel tax three times over.
-
-Just as cloud computing replaced shipping physical servers with moving virtual machines, machine-native vision replaces transporting pixels with transporting meaning. The abstraction layer shifts: from appearances to representations.
+Now let's talk about current camera systems. They still work like old-school TV broadcasts meant for lots of people to watch. Cameras capture images, encode them with H.265 or H.264, send them over expensive connections, decode them back into RGB in the cloud before feeding them into neural networks like CNNs or ViTs. This process finally shrinks the data down to small representations, often just tens of kilobytes. Detectors and trackers can work smoothly, but by the time the model gets what it needs, the system has already paid for processing pixels multiple times. Similar to how cloud computing replaced shipping physical servers with virtual machines, machine-native vision swaps transporting pixels for conveying meaning. The focus shifts from appearances to representations.
 
 ## The Future Architecture
 
-The fix is to move the representation layer to the edge. Cameras will incorporate learned latent encoders that compress data into a compact bitstream — often tens to hundreds of kilobytes — before it traverses constrained networks. That bitstream feeds a cloud decoder that serves multiple downstream models simultaneously. If a human ever needs to inspect the scene, a neural reconstruction head generates RGB on demand. RGB becomes a reconstruction target rather than the primary transport format.
-
-The bitstream becomes an agreement between encoder and decoder, not a delivery mechanism for human eyes.
+Looking ahead, a solution is to move the representation layer closer to where data is captured. Cameras will be equipped with specialized encoders that compress information into a small bitstream—usually just tens or hundreds of kilobytes—before sending it over limited networks. This compressed data then goes to a cloud-based decoder capable of supporting several models at once. If a person needs to look at the scene, a neural reconstruction head can create RGB images on request. Now, RGB becomes a target for reconstruction instead of the main format for transport. The bitstream acts as an agreement between encoder and decoder rather than serving as something for humans to see.
 
 ## Why Now
 
-None of these enabling technologies alone was sufficient. Together, they remove the last barriers to machine-native vision infrastructure. Modern backbones — like [DINOv2](https://arxiv.org/abs/2304.07193) — now work across different fields without needing manually created feature descriptors like SIFT or HOG. [Learned entropy coding](https://arxiv.org/abs/1802.01436) lets us allocate bits adaptively within the latent space. Over 200 TOPS of edge silicon is available within a 15–50 W power envelope, enabling neural encoders to run directly on cameras. A single feature grid — as demonstrated by models like [Segment Anything](https://arxiv.org/abs/2304.02643) — can supply detection, tracking, and segmentation simultaneously, eliminating per-task processing pipelines. Standards organizations are taking notice: [MPEG-FCM (Feature Compression for Machines)](https://www.iso.org/standard/85443.html) signals that machine-native visual representations are moving from niche experiment to industry priority.
+So, why is this happening now? No single technology could make this possible on its own. Together, they break down the final barriers to building a machine-native vision infrastructure. Modern systems like [DINOv2](https://arxiv.org/abs/2304.07193) operate across various fields without needing manually crafted features such as SIFT or HOG. With [learned entropy coding](https://arxiv.org/abs/1802.01436), bit allocation within the latent space becomes adaptive. Over 200 TOPS of edge silicon is accessible within a power range of 15–50 W, enabling neural encoders to function directly within cameras. A single feature grid that handles detection, tracking, and segmentation all at once—as seen in models like [Segment Anything](https://arxiv.org/abs/2304.02643)—removes the need for separate processing pipelines for each task. Standards bodies are taking notice; [MPEG-FCM (Feature Compression for Machines)](https://www.iso.org/standard/85443.html) is highlighting that machine-focused visual representations are shifting from experimental to mainstream importance.
 
 ## The Competitive Edge
 
-Video codecs eventually become commodities. H.264 and H.265 succeeded because everyone implemented the same standard. The same will happen with machine-native codecs. The durable advantage won't come from the bitstream itself — it will come from continuously adapting representations to new models, hardware, and environments. Companies that excel won't be those clinging to pixels; they'll be those mastering how intelligence flows.
+Video codecs like H.264 and H.265 became widely used because everyone followed the same standard, turning them into commodities. Machine-native codecs will follow this trend. The true advantage lies not in the bitstream itself but in continuously adapting these representations to align with new models, hardware, and environments. Companies that thrive won't be those stuck on pixels; they'll be those adept at managing how intelligence flows.
 
 ## Looking Forward
 
-The last thirty years optimized video for human perception. The next thirty will optimize it for machine understanding. Pixels aren't disappearing. They're just no longer the primary interface between the physical world and intelligent systems.
-
-This isn't an argument for a better codec. It's an argument that an entire infrastructure stack is due for replacement.
+The past three decades have been about optimizing video for human eyes. The next three will focus on making it suitable for machines to understand. Pixels aren't going anywhere—but they're no longer the primary interface between the physical world and the intelligent systems that analyze it.
