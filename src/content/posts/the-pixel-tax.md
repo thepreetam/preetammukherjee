@@ -10,9 +10,7 @@ tags:
   - infrastructure
 ---
 
-For many years, video technology has been tailored to match what the human eye perceives.
-
-Every video format, like H.264, HEVC, and AVI, relies on standards such as SSIM or VMAF to determine how appealing a video appears to us. However, machines have now quietly become the main consumers of these videos. When a camera in a factory or on an offshore platform feeds data into a PyTorch model, its goal isn't to entertain viewers. Instead, it aims to spot defects, monitor objects, or detect anomalies.
+For many years, video technology has been tailored to match what the human eye perceives. Every video format, like H.264, HEVC, and AVI, relies on standards such as SSIM or VMAF to determine how appealing a video appears to us. However, machines have now quietly become the main consumers of these videos. When a camera in a factory or on an offshore platform feeds data into a PyTorch model, its goal isn't to entertain viewers. Instead, it aims to spot defects, monitor objects, or detect anomalies.
 
 Yet despite this change in audience focus, we continue to pay for encoding and transmitting raw video data that neural networks promptly discard. This is what we're now calling the "pixel tax."
 
