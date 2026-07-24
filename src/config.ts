@@ -6,7 +6,12 @@
  */
 import userConfig from "@/astro-paper.config";
 import type { ResolvedAstroPaperConfig } from "./types/config";
-import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
+
+let publicGoogleSiteVerification = "";
+try {
+  const mod = await import("astro:env/client");
+  publicGoogleSiteVerification = (mod as unknown as Record<string, string>).PUBLIC_GOOGLE_SITE_VERIFICATION ?? "";
+} catch {}
 
 const DEFAULT_OG_IMAGE = "default-og.jpg";
 
@@ -18,7 +23,7 @@ const config: ResolvedAstroPaperConfig = {
     timezone: userConfig.site.timezone ?? "UTC",
     dir: userConfig.site.dir ?? "ltr",
     googleVerification:
-      userConfig.site.googleVerification || PUBLIC_GOOGLE_SITE_VERIFICATION,
+      userConfig.site.googleVerification || publicGoogleSiteVerification,
   },
   posts: {
     perPage: userConfig.posts?.perPage ?? 4,

@@ -45,6 +45,7 @@ export const GET: APIRoute = async ({ props, url }) => {
   ]);
 
   const svg = await satori(
+    // @ts-expect-error — satori accepts VNode-like objects but types expect React JSX elements
     {
       type: "div",
       props: {

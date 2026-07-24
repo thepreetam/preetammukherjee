@@ -2,19 +2,19 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://astro-paper.pages.dev/",
-    title: "AstroPaper",
-    description: "A minimal, responsive and SEO-friendly Astro blog theme.",
-    author: "Sat Naing",
-    profile: "https://satna.ing",
+    url: "https://preetammukherjee.com",
+    title: "Preetam Mukherjee",
+    description: "Personal website of Preetam Mukherjee — founder, systems engineer, building OUTPOST.",
+    author: "Preetam Mukherjee",
+    profile: "https://github.com/thepreetam",
     ogImage: "default-og.jpg",
     lang: "en",
-    timezone: "Asia/Bangkok",
+    timezone: "America/Los_Angeles",
     dir: "ltr",
   },
   posts: {
-    perPage: 4,
-    perIndex: 4,
+    perPage: 10,
+    perIndex: 10,
     scheduledPostMargin: 15 * 60 * 1000,
   },
   features: {
@@ -24,15 +24,15 @@ export default defineAstroPaperConfig({
     showBackButton: true,
     editPost: {
       enabled: true,
-      url: "https://github.com/satnaing/astro-paper/edit/main/",
+      url: "https://github.com/thepreetam/preetammukherjee/edit/main/",
     },
     search: "pagefind",
   },
   socials: [
-    { name: "github",   url: "https://github.com/satnaing/astro-paper" },
-    { name: "x",        url: "https://x.com/username" },
-    { name: "linkedin", url: "https://www.linkedin.com/in/username/" },
-    { name: "mail",     url: "mailto:yourmail@gmail.com" },
+    { name: "github",   url: "https://github.com/thepreetam" },
+    { name: "x",        url: "https://x.com/thepreetam" },
+    { name: "linkedin", url: "https://www.linkedin.com/in/thepreetam" },
+    { name: "mail",     url: "mailto:preetam@mahamaia.com" },
   ],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
