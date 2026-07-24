@@ -1,7 +1,7 @@
 ---
 title: "The Encoder Drift Issue"
 description: "Why learned encoders degrade over time and why versioning them is harder than it looks."
-pubDatetime: 2026-07-23
+pubDatetime: 2026-07-25
 tags:
   - video
   - edge-computing
